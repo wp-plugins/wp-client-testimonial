@@ -1,0 +1,122 @@
+/** wp-client-testimonials **/
+#wp-client-testimonials {
+  display: block;
+   width: 100%;
+    background: #B7EDFF;
+    position: relative;
+    font-family: Georgia, serif;
+    color: #666;
+    border-radius: 5px;
+    text-shadow: 0 1px 0 #ECFBFF;
+    background-image: linear-gradient(#CEF3FF, #B7EDFF);
+  
+}
+#wp-client-testimonials h2 {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+#wp-client-testimonials .carousel-wrap {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#wp-client-testimonials .carousel-nav {
+  display: block;
+  width: 145px;
+  margin: 0 auto;
+}
+#wp-client-testimonials .carousel-nav img {
+  cursor: pointer;
+}
+#wp-client-testimonials .carousel-nav img:active {
+  position: relative;
+  top: 1px;
+}
+#wp-client-testimonials .carousel-nav .nextbtn {
+  float: right;
+}
+
+#wp-client-testimonials .carousel-wrap ul {
+  display: block;
+  list-style: none;
+  position: relative;
+}
+#wp-client-testimonials .carousel-wrap ul li {
+  display: block;
+  float: left;
+  position: relative;
+  width: 400px;
+  margin-right: 15px;
+}
+
+#wp-client-testimonials .carousel-wrap .context {
+  background: #ebf3f5;
+  padding: 15px 20px 5px 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#wp-client-testimonials .carousel-wrap .context:after{
+content: '';
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 20px 18px 0 18px;
+  border-color: #ebf3f5 transparent transparent transparent;
+  position: relative;
+  top: 37px;
+  left: 20px;
+}
+  
+#wp-client-testimonials .student {
+  margin-left: 25px;
+  margin-bottom: 80px;
+}
+
+#wp-client-testimonials .student .photo {
+  background-color: #ccc;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+}
+
+#wp-client-testimonials .student .photo{
+	border-radius: 50%;
+	overflow: hidden;
+	width: 85px;
+	height: 85px;
+}
+#wp-client-testimonials .student .photo img {
+	display: block;
+	min-width: 100%;
+    min-height: 100%;
+}
+#wp-client-testimonials .student p {
+  position: relative;
+  top: 5px;
+  text-transform: uppercase;
+}
+#wp-client-testimonials .student p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+#wp-client-testimonials .student p:nth-child(3) {
+  font-size: 14px;
+  color: #777;
+}
+
+#wp-client-testimonials .prevbtn ,#wp-client-testimonials .nextbtn{ 
+  text-decoration:none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
