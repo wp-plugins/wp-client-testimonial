@@ -35,4 +35,4 @@ the top-level folder. Don't just upload all the php files and put them in `/wp-c
 3. Go to your WP-admin ->Client Testimonials,here we can add/manage client testimonials .
 4. you can call client testimonial using shortcode
 4.1. In page or post put shortcode directly  ['wp-client-testimonial']
-4.2. In template file call shortcode by <?php  echo do_shortcode("['wp-client-testimonial']");?>
+4.2. In template file call shortcode by ' echo do_shortcode("['wp-client-testimonial']");'
