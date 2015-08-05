@@ -13,6 +13,16 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=amu02.af
 == Description ==
 Display client testimonials with slide previous and next features.
 
+<strong>Plugin Features</strong>
+
+* Shortcode System.
+* Use this shortcode ['wp-client-testimonial'] where you want show the testimonial.
+* Wordpress Custom Post Enabled.
+* Easy to Use.
+* You can use it sidebar via Text widgets.
+* You can use it in posts or pages.
+
+
 == Screenshots ==
 1. Back end client testimonial list
 2. Back end add client testimonial 
