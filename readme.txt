@@ -1,4 +1,4 @@
-=== WP Client Testimonial ===
+=== Client Testimonial ===
 Tags: Testimonial, testimonial slider, clients Feedback, clients Testimonial, testimonial , slider, clients-portfolio, clients-plugin, testimonial-plugin, client quotes, portfolio, projects, recommendations, references, reviews, testimonials.
 Contributors: amu02aftab
 Author: amu02aftab
