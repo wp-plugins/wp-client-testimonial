@@ -48,7 +48,7 @@ the top-level folder. Don't just upload all the php files and put them in `/wp-c
 ` 
 ['wp-client-testimonial']
 `
-6. In php template file call shortcode by 
+ In php template file call shortcode by 
 `
 <?php  echo do_shortcode("['wp-client-testimonial']"); ?>
 `
