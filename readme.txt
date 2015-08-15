@@ -46,9 +46,9 @@ the top-level folder. Don't just upload all the php files and put them in `/wp-c
 4. you can call client testimonial using shortcode
 5. In page or post put shortcode directly 
 ` 
-['wp-client-testimonial']
+[wp-client-testimonial]
 `
  In php template file call shortcode by 
 `
-<?php  echo do_shortcode("['wp-client-testimonial']"); ?>
+<?php  echo do_shortcode("[wp-client-testimonial]"); ?>
 `
