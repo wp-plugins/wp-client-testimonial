@@ -16,7 +16,7 @@ Display client testimonials with slide previous and next features.
 <strong>Plugin Features</strong>
 
 * Shortcode System.
-* Use this shortcode ['wp-client-testimonial'] where you want show the testimonial.
+* Use this shortcode [wp-client-testimonial] where you want show the testimonial.
 * Wordpress Custom Post Enabled.
 * Easy to Use.
 * You can use it sidebar via Text widgets.
