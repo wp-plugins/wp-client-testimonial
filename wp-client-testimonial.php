@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Client Testimonial
  * Plugin URI: https://aftabhusain.wordpress.com/
- * Description: Display client testimonial with slide previous and next features.And having different color settings from admin.
+ * Description: Display client testimonial with slide previous and next features. And having different color settings from admin .
  * Version: 2.0
  * Author: Aftab Husain
  * Author URI: https://aftabhusain.wordpress.com/

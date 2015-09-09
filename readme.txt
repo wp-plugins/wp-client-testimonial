@@ -11,7 +11,7 @@ Stable tag: 2.0
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=amu02.aftab@gmail.com&item_name=Donation+WP+Client+Testimonial
 
 == Description ==
-Display client testimonials with slide previous and next features. And having different color settings from admin. 
+Display client testimonials with slide previous and next features. And having different color settings from admin . 
 
 <strong>Plugin Features</strong>
 
