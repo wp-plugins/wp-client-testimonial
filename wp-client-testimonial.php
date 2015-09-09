@@ -3,13 +3,16 @@
  * Plugin Name: WP Client Testimonial
  * Plugin URI: https://aftabhusain.wordpress.com/
  * Description: Display client testimonial with slide previous and next features.
- * Version: 1.0.0
+ * Version: 2.0
  * Author: Aftab Husain
  * Author URI: https://aftabhusain.wordpress.com/
  * License: GPLv2
  */
 
 if(!defined('ABSPATH')) exit; // Prevent Direct Browsing
+
+define('AWTS_INCLUDE_DIR', plugin_dir_path(__FILE__).'include/');
+
 
 // CSS and JS include
 function aft_incl_script_style() {
@@ -62,6 +65,28 @@ function aft_custom_post_type(){
 }
 
 add_action('init' , 'aft_custom_post_type');
+
+
+// admin menu
+function aft_menus() {
+	add_submenu_page("edit.php?post_type=testimonials", "Settings", "Settings", "administrator", "testimonial-settings", "aft_pages");
+}
+add_action("admin_menu", "aft_menus");
+
+
+//function menu pages
+function aft_pages() {
+
+   $setting = AWTS_INCLUDE_DIR.$_GET["page"].'.php';
+   include($setting);
+
+}
+
+add_action( 'admin_enqueue_scripts', 'aft_wp_enqueue_color_picker' );
+function aft_wp_enqueue_color_picker( ) {
+    wp_enqueue_style( 'wp-color-picker' );
+    wp_enqueue_script( 'wp-color-picker-script', plugins_url('include/color-picker.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
+}
 
 
 // Testimonial Meta Box
@@ -148,6 +173,40 @@ add_action( 'admin_head', 'aft_testimonials_dashboard_icon' );
 add_shortcode( 'wp-client-testimonial', 'aft_client_testimonial_shortcode' );
 function aft_client_testimonial_shortcode( $atts ) {
     ob_start();
+	
+	//get saved settings
+    $main_box_bg_color= get_option('main_box_bg_color'); 
+    $all_text_color= get_option('all_text_color'); 
+    $client_content_box_color= get_option('client_content_box_color');
+    $testimonial_heading_text= get_option('testimonial_heading_text'); 
+	
+	//default color settings
+	if($main_box_bg_color == ''){ $main_box_bg_color='#405448'; }
+	if($all_text_color == ''){ $all_text_color='#fff'; }
+	if($client_content_box_color == ''){ $client_content_box_color='#2a4126'; }
+	if($testimonial_heading_text == ''){ $testimonial_heading_text='Client Testimonials'; }
+	?>
+	<style>
+	#wp-client-testimonials { background: <?php echo $main_box_bg_color;?> none repeat scroll 0 0; }
+	#wp-client-testimonials .carousel-wrap .context { background:<?php echo $client_content_box_color;?>; }
+	#wp-client-testimonials .carousel-wrap .context::after {
+		border-color: <?php echo $client_content_box_color;?> transparent transparent;
+		border-style: solid;
+		border-width: 20px 18px 0;
+		content: "";
+		height: 0;
+		left: 20px;
+		position: relative;
+		top: 44px;
+		width: 0;
+    }
+	#wp-client-testimonials h2 { color: <?php echo $all_text_color;?>; }
+	#wp-client-testimonials .prevbtn, #wp-client-testimonials .nextbtn { color: <?php echo $all_text_color;?>; }
+	#wp-client-testimonials .student p { color: <?php echo $all_text_color;?> !important; }
+	#wp-client-testimonials .context > p { color: <?php echo $all_text_color;?> !important; }
+	</style>
+	<?php
+	
     extract( shortcode_atts( array (
         'type' => 'testimonials',
         'order' => 'date',
@@ -165,8 +224,9 @@ function aft_client_testimonial_shortcode( $atts ) {
     $query = new WP_Query( $options );?>
     <?php if ( $query->have_posts() ) { ?>
 	
+	
 	 <div id="wp-client-testimonials">
-	   <h2>Client Testimonials</h2>
+	   <h2><?php echo $testimonial_heading_text;?></h2>
         <div class="carousel-nav clearfix">
 		 <a id="prv-testimonial" class="prevbtn" href="javascript:void(0)"> << Prev </a>
 		 <a id="nxt-testimonial" class="nextbtn" href="javascript:void(0)">Next >></a>

@@ -5,7 +5,7 @@ Author: amu02aftab
 Tested up to: 4.3
 License: GPLv2
 Requires at least: 3.5.0
-Stable tag: 1.0
+Stable tag: 2.0
 
 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=amu02.aftab@gmail.com&item_name=Donation+WP+Client+Testimonial
@@ -15,25 +15,33 @@ Display client testimonials with slide previous and next features.
 
 <strong>Plugin Features</strong>
 
+* Having color customization option in admin
 * Shortcode System.
 * Use this shortcode [wp-client-testimonial] where you want show the testimonial.
 * Wordpress Custom Post Enabled.
 * Easy to Use.
-* You can use it sidebar via Text widgets.
 * You can use it in posts or pages.
 
 
 == Screenshots ==
 1. Back end client testimonial list
 2. Back end add client testimonial 
-2. Frond end look of client testimonial
+3. Back end color settings 
+4. Frond end look of client testimonial
 
 
 == Frequently Asked Questions ==
 1. No technical skills needed.
 
 == Changelog ==
-This is first version no known errors found
+
+= 2.0 =
+* Bug fixes
+* Add different color setting for testimonial
+* Update readme.txt
+
+= 1.0 =
+* Initial release
 
 == Upgrade Notice == 
 This is first version no known notices yet

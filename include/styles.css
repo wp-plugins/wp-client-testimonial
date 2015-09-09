@@ -1,33 +1,35 @@
 /** wp-client-testimonials **/
 #wp-client-testimonials {
-  display: block;
-   width: 100%;
-    background: #B7EDFF;
-    position: relative;
-    font-family: Georgia, serif;
-    color: #666;
+   /* background: #405448 none repeat scroll 0 0;*/
     border-radius: 5px;
-    text-shadow: 0 1px 0 #ECFBFF;
-    background-image: linear-gradient(#CEF3FF, #B7EDFF);
-  
+    box-shadow: 0 0 3px 0 #405448;
+    color: #666;
+    display: block;
+    font-family: Georgia,serif;
+    margin: 0 auto;
+    position: relative;
+    text-shadow: 0 1px 0 #ecfbff;
+    width: 100%;
 }
 #wp-client-testimonials h2 {
-  display: block;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 3px;
+  
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px;
+    padding: 22px 0 10px;
+    text-align: center;
+    text-shadow: 0 3px 2px #000;
 }
-
 #wp-client-testimonials .carousel-wrap {
-  display: block;
-  width: 400px;
-  margin: 0 auto;
-  overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 463px;
 }
 
 #wp-client-testimonials .carousel-nav {
   display: block;
-  width: 145px;
+  width: 130px;
   margin: 0 auto;
 }
 #wp-client-testimonials .carousel-nav img {
@@ -47,18 +49,26 @@
   position: relative;
 }
 #wp-client-testimonials .carousel-wrap ul li {
-  display: block;
-  float: left;
-  position: relative;
-  width: 400px;
-  margin-right: 15px;
+    box-shadow: 0 0 0 #fff;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    width: 418px;
 }
 
 #wp-client-testimonials .carousel-wrap .context {
-  background: #ebf3f5;
-  padding: 15px 20px 5px 15px;
-  border-radius: 5px;
-  margin-bottom: 20px;
+    /*background: #ebf3f5 none repeat scroll 0 0;*/
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px 47px 5px 15px;
+	
+}
+
+.context > p {
+    font-weight: normal;
+    text-shadow: 0 0 1px #000 ;
+	color:#fff;
 }
 
 #wp-client-testimonials .carousel-wrap .context:after{
@@ -74,8 +84,9 @@ content: '';
 }
   
 #wp-client-testimonials .student {
-  margin-left: 25px;
-  margin-bottom: 80px;
+    margin-bottom: 71px;
+    margin-left: 11px;
+    margin-top: 30px;
 }
 
 #wp-client-testimonials .student .photo {
@@ -100,10 +111,10 @@ content: '';
 }
 #wp-client-testimonials .student p {
   position: relative;
-  top: 5px;
+  top: 19px;
   text-transform: uppercase;
 }
-#wp-client-testimonials .student p:nth-child(2) {
+#wp-client-testimonials ..student p:nth-child(2) {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 0;
@@ -113,10 +124,26 @@ content: '';
   color: #777;
 }
 
-#wp-client-testimonials .prevbtn ,#wp-client-testimonials .nextbtn{ 
-  text-decoration:none;
-  font-size: 16px;
-  font-weight: 600;
+
+#wp-client-testimonials .prevbtn, #wp-client-testimonials .nextbtn {
+  
+    text-decoration: none;
+    text-shadow: 0 2px 0 #000;
 }
 
 
+
+
+
+.clearfix::after, .clearfix::before {
+    clear: both;
+    content: "";
+    display: block;
+    overflow: hidden;
+}
+
+.student p {
+   
+    margin: 0 0 3px;
+    text-shadow: 0 2px 1px #000;
+}
